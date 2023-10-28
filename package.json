@@ -1,0 +1,18 @@
+{
+  "name": "salesforce-node",
+  "version": "1.0.0",
+  "description": "API endpoint for listning salesforce req/res.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js"
+  },
+  "author": "Nitesh",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
