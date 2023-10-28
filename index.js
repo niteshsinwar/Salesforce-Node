@@ -30,7 +30,8 @@ app.post('/authenticate', (req, res) => {
 app.post('/salesforce/account', (req, res) => {
   const salesforceToken = req.header('Authorization');
   console.log('salesforceToken',salesforceToken);
-  
+  const decodedToken = jwt.decode(salesforceToken);
+  console.log(decodedToken);
   jwt.verify(salesforceToken, secretKey, (err, decoded) => {
     if (err) {
       console.log(err);
